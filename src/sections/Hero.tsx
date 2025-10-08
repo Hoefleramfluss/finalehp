@@ -122,7 +122,7 @@ export default function Hero() {
             </motion.div>
 
             <motion.div
-              className="flex flex-wrap gap-2 sm:gap-3"
+              className="flex flex-wrap justify-center gap-2 sm:justify-start sm:gap-3"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.35, duration: 0.6, ease: "easeOut" }}
