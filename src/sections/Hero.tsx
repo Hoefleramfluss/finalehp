@@ -159,8 +159,8 @@ export default function Hero() {
             />
             
             <div className="flex items-center justify-between text-[10px] font-medium text-white/60 sm:text-xs">
-              <span>Realtime KPI</span>
-              <span>Heute</span>
+              <span>Bewährte Ergebnisse</span>
+              <span>Live</span>
             </div>
             <div className="mt-5 grid grid-cols-2 gap-3 sm:mt-6 sm:gap-4">
               {copy.why.highlights.map((item, idx) => (

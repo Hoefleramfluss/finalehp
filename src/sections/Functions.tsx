@@ -52,7 +52,7 @@ export default function Functions() {
         <div className="flex w-full max-w-md flex-col items-center gap-3 text-center">
           <p className="text-base font-semibold text-white sm:text-lg">Überzeugen Sie sich selbst!</p>
           <p className="text-sm leading-relaxed text-white/70">
-            Jahrelange Entwicklung der "Menschlichkeit" – lernt mit jedem Anruf:
+            Hören Sie selbst: Echtes Kundengespräch aus der Praxis
           </p>
           <audio 
             controls 
@@ -63,7 +63,7 @@ export default function Functions() {
             Ihr Browser unterstützt das Audio-Element nicht.
           </audio>
           <p className="px-4 text-xs leading-relaxed text-electric-300/80">
-            🎧 Hörbeispiel: Wie ein Patiententelefonat klingen könnte (real getestet)
+            Reales Patiententelefonat – aufgenommen in einer österreichischen Ordination
           </p>
         </div>
         <ShimmerButton asLink href="#contact" className="w-full max-w-xs px-8 py-3 sm:w-auto">

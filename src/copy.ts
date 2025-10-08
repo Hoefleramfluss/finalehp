@@ -4,15 +4,15 @@ export const copy = {
     shortTagline: "Voicebots für KMU · DSGVO-konform · Made in Austria",
     description:
       "Ob Gastro, Ordination oder Werkstatt: Voxon.ai kümmert sich rund um die Uhr um Anrufe, Termine & Rückfragen – DSGVO-sicher, menschlich & effizient.",
-    heroTitle: "Nie wieder Kunden verlieren, weil niemand ans Telefon geht.",
+    heroTitle: "Gewinnen Sie jeden Kunden – Ihr KI-Agent nimmt jeden Anruf entgegen",
     heroSubtitle:
-      "Ihr KI-Voice-Agent übernimmt Terminbuchungen, beantwortet Anfragen und tätigt sogar Akquise-Anrufe – 24/7 erreichbar, nahtlos integriert in alle gängigen Systeme (Reservierungstools, CRM, Kalender) quer durch alle Branchen. Dank jahrelanger Entwicklung der 'Menschlichkeit' klingt unser System täuschend echt und lernt mit jedem Gespräch dazu. Inkl. Dialekt nach Wunsch.",
+      "Ihr KI-Voice-Agent bucht Termine, beantwortet Fragen und lernt täglich dazu – 24/7 erreichbar, perfekt integriert in Ihre Systeme.",
     ctaPrimary: "→ Kostenlose Demo vereinbaren",
-    ctaSecondary: "→ Jetzt ein Testgespräch anhören",
+    ctaSecondary: "→ Live-Demo anhören (1:28 Min.)",
     heroOptions: [
-      { label: "24/7", text: "24/7 Erreichbarkeit – auch nachts, am Wochenende & in Stoßzeiten" },
-      { label: "integration", text: "Nahtlose Integration in alle gängigen Systeme & Branchen" },
-      { label: "dialekt", text: "Dialekt & Tonalität nach Wunsch – klingt täuschend menschlich" },
+      { label: "24/7", text: "Nie wieder einen Anruf verpassen – auch nachts, am Wochenende & in Stoßzeiten" },
+      { label: "integration", text: "In 48h einsatzbereit – Integration in Ihre bestehenden Systeme" },
+      { label: "dialekt", text: "Klingt wie Ihr bestes Teammitglied – perfekt auf Ihre Branche trainiert" },
       { label: "outbound", text: "Inbound & Outbound – für Terminvergabe UND Akquise" },
     ],
     nav: {
@@ -42,39 +42,39 @@ export const copy = {
     ],
   },
   why: {
-    title: "Jahrelang perfektioniert – täuschend menschlich",
+    title: "Jahrelang perfektioniert – unglaublich natürlich",
     intro:
-      "Durch jahrelange Entwicklung unserer Voice-AI klingt Voxon.ai nicht nur menschlich, sondern lernt mit jedem Anruf dazu. Das Ergebnis: 300% höhere Erreichbarkeit, 45% weniger No-Shows und bis zu 15h Zeitersparnis pro Woche.",
+      "Unsere Voice-KI lernt mit jedem Gespräch – das Ergebnis: 300% höhere Erreichbarkeit, 45% weniger No-Shows, bis zu 15h Zeitersparnis pro Woche.",
     bullets: [
       {
         title: "Sparen Sie bis zu 15 Stunden pro Woche",
         description:
-          "Automatisierte Terminbuchungen, Standardfragen und Erinnerungen – rund um die Uhr. Ihr Team fokussiert sich auf das Wesentliche.",
+          "Automatisierte Buchungen und Erinnerungen – Ihr Team fokussiert sich aufs Wesentliche.",
       },
       {
         title: "Reduzieren Sie No-Shows um bis zu 45%",
         description:
-          "Intelligente Erinnerungen und proaktive Bestätigungen sorgen für weniger Ausfälle und einen optimierten Kalender.",
+          "Intelligente Erinnerungen und Bestätigungen verhindern Ausfälle.",
       },
       {
         title: "300% höhere Erreichbarkeit – ohne Mehraufwand",
         description:
-          "Ihr Voice-Agent nimmt jeden Anruf entgegen, auch außerhalb der Geschäftszeiten. Kein verpasster Kunde mehr.",
+          "Während Ihr Team im Kundengespräch ist, nimmt Ihr KI-Agent parallel alle eingehenden Anrufe entgegen. Kein Kunde landet mehr in der Warteschleife.",
       },
       {
         title: "100% DSGVO-konform & EU-gehostet",
         description:
-          "Alle Daten bleiben in der EU. Keine Cloud-Experimente. Vollständig konform mit allen Datenschutzrichtlinien.",
+          "Ihre Daten bleiben zu 100% in der EU. Zertifizierte Server, keine Experimente – vollständig DSGVO-konform.",
       },
       {
         title: "Volle Kostentransparenz – zahlen Sie nur, was Sie nutzen",
         description:
-          "Minutenbasierte Abrechnung, keine versteckten Kosten. Jederzeit flexibel skalierbar und anpassbar.",
+          "Minutenbasierte Abrechnung ohne Fixkosten. Jederzeit flexibel skalierbar und anpassbar.",
       },
       {
         title: "Natürliche Gespräche, die überzeugen",
         description:
-          "Unsere KI wird auf Ihren Kommunikationsstil trainiert und klingt wie ein echtes Teammitglied – freundlich, professionell, menschlich.",
+          "Ihre KI spricht Wienerisch, Hochdeutsch oder neutral – trainiert auf Ihre Branche und Tonalität. Kunden bemerken keinen Unterschied zum menschlichen Gespräch.",
       },
     ],
     highlights: [
@@ -93,20 +93,20 @@ export const copy = {
     ],
   },
   functions: {
-    title: "Unsere Funktionen",
-    subtitle: "👉 Teste Voxon.ai kostenlos – ganz ohne Risiko.",
+    title: "Alles, was Sie brauchen – out of the box",
+    subtitle: "Kostenlos testen – ohne Risiko, ohne Vertragsbindung.",
     cards: [
       {
         icon: "📞",
         title: "24/7 Erreichbarkeit – Inbound & Outbound",
         description:
-          "Nimmt Anrufe rund um die Uhr entgegen UND tätigt Akquise-Anrufe für Sie. Nie wieder verpasste Chancen.",
+          "Nimmt jeden eingehenden Anruf entgegen UND führt proaktiv Akquise-Anrufe – zu jeder Tages- und Nachtzeit.",
       },
       {
         icon: "🔌",
         title: "Nahtlose Integration in alle Systeme",
         description:
-          "Reservierungstools (Resmio, Doctolib), CRMs, Kalender – alle Branchen. Plug & Play in unter 48h.",
+          "Reservierungstools (Resmio, Doctolib), CRMs, Kalender – direkte Integration in unter 48h.",
       },
       {
         icon: "🗣️",
@@ -115,7 +115,7 @@ export const copy = {
           "Wienerisch, Hochdeutsch oder neutral? Unser Voice-Agent passt sich perfekt an Ihre Zielgruppe an.",
       },
     ],
-    ctaButton: "📲 Jetzt live testen – gratis & unverbindlich.",
+    ctaButton: "Jetzt live testen – gratis & unverbindlich",
   },
   testimonials: {
     title: "Stimmen unserer Kunden",
