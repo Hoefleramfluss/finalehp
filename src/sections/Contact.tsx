@@ -25,20 +25,48 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simuliere API-Call (hier später echte Integration)
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus("success");
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        message: "",
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+          from_name: "Voxon.ai Kontaktformular",
+          subject: `Neue Kontaktanfrage von ${formData.name}`,
+          to: import.meta.env.VITE_CONTACT_EMAIL,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          message: formData.message,
+        }),
       });
 
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus("success");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          message: "",
+        });
+        setTimeout(() => setSubmitStatus("idle"), 5000);
+      } else {
+        setSubmitStatus("error");
+        setTimeout(() => setSubmitStatus("idle"), 5000);
+      }
+    } catch (error) {
+      console.error("Formular-Fehler:", error);
+      setSubmitStatus("error");
       setTimeout(() => setSubmitStatus("idle"), 5000);
-    }, 1500);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -82,6 +110,26 @@ export default function Contact() {
               </div>
               <h3 className="text-xl font-bold text-white">Vielen Dank für Ihre Anfrage!</h3>
               <p className="text-white/70">Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+            </motion.div>
+          ) : submitStatus === "error" ? (
+            <motion.div
+              className="flex flex-col items-center gap-4 py-12 text-center"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+            >
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-red-500/20">
+                <svg className="h-8 w-8 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white">Ein Fehler ist aufgetreten</h3>
+              <p className="text-white/70">Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt.</p>
+              <button
+                onClick={() => setSubmitStatus("idle")}
+                className="mt-4 text-sm text-electric-400 hover:text-electric-300"
+              >
+                Zurück zum Formular
+              </button>
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
