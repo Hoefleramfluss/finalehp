@@ -1,32 +1,21 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Routes, Route } from 'react-router-dom';
 import Analytics from "@/components/Analytics";
-import Hero from "@/sections/Hero";
-import Why from "@/sections/Why";
-import Functions from "@/sections/Functions";
-import Testimonials from "@/sections/Testimonials";
-import Pricing from "@/sections/Pricing";
-import FAQ from "@/sections/FAQ";
-import Contact from "@/sections/Contact";
-import CTA from "@/sections/CTA";
+import HomePage from "@/pages/HomePage";
+import VoicebotDeutsch from "@/pages/VoicebotDeutsch";
+import KITerminbuchung from "@/pages/KITerminbuchung";
+import VoicebotGastronomie from "@/pages/VoicebotGastronomie";
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-night-900 text-white">
+    <>
       <Analytics />
-      <Header />
-      <main className="relative isolate flex flex-col gap-28">
-        <Hero />
-        <Why />
-        <Functions />
-        <Testimonials />
-        <Pricing />
-        <Contact />
-        <FAQ />
-        <CTA />
-      </main>
-      <Footer />
-    </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/voicebot-deutsch" element={<VoicebotDeutsch />} />
+        <Route path="/ki-terminbuchung" element={<KITerminbuchung />} />
+        <Route path="/branchen/gastronomie" element={<VoicebotGastronomie />} />
+      </Routes>
+    </>
   );
 }
 
