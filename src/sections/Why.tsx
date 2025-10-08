@@ -7,8 +7,8 @@ import { copy } from "@/copy";
 export default function Why() {
   return (
     <section id="why" className="relative mx-auto w-full max-w-6xl px-6 scroll-mt-24">
-      <div className="grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:items-start">
-        <div className="space-y-8">
+      <div className="grid gap-8 sm:gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:items-start">
+        <div className="space-y-6 sm:space-y-8">
           <motion.div
             className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-night-900/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-white/70 backdrop-blur"
             initial={{ opacity: 0, y: -12 }}

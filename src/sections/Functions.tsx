@@ -43,30 +43,30 @@ export default function Functions() {
       </div>
 
       <motion.div 
-        className="mt-12 flex flex-col items-center gap-6"
+        className="mt-10 flex flex-col items-center gap-6 sm:mt-12"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.3 }}
       >
-        <div className="flex flex-col items-center gap-3 text-center">
+        <div className="flex w-full max-w-md flex-col items-center gap-3 text-center">
           <p className="text-base font-semibold text-white sm:text-lg">Überzeugen Sie sich selbst!</p>
-          <p className="text-sm text-white/70">
+          <p className="text-sm leading-relaxed text-white/70">
             Jahrelange Entwicklung der "Menschlichkeit" – lernt mit jedem Anruf:
           </p>
           <audio 
             controls 
-            className="rounded-xl border border-white/10 bg-night-900/80 shadow-lg"
-            style={{ width: '320px', maxWidth: '100%' }}
+            className="w-full rounded-xl border border-white/10 bg-night-900/80 shadow-lg"
+            style={{ maxWidth: '400px' }}
           >
             <source src="/testaudio.mp3" type="audio/mpeg" />
             Ihr Browser unterstützt das Audio-Element nicht.
           </audio>
-          <p className="text-xs text-electric-300/80">
+          <p className="px-4 text-xs leading-relaxed text-electric-300/80">
             🎧 Hörbeispiel: Wie ein Patiententelefonat klingen könnte (real getestet)
           </p>
         </div>
-        <ShimmerButton asLink href="#contact" className="px-8 py-3">
+        <ShimmerButton asLink href="#contact" className="w-full max-w-xs px-8 py-3 sm:w-auto">
           {copy.functions.ctaButton}
         </ShimmerButton>
       </motion.div>

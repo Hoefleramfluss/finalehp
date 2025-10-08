@@ -4,9 +4,9 @@ import { copy } from "@/copy";
 
 export default function CTA() {
   return (
-    <section id="contact" className="relative mx-auto w-full max-w-5xl px-6 scroll-mt-24">
+    <section id="cta-final" className="relative mx-auto w-full max-w-5xl px-6 scroll-mt-24">
       <motion.div 
-        className="overflow-hidden rounded-[28px] border border-white/10 bg-gradient-to-r from-electric-500/20 via-night-900/95 to-aqua-500/20 p-8 text-center shadow-[0_45px_160px_-70px_rgba(0,188,212,0.6)] sm:rounded-[36px] sm:p-10"
+        className="overflow-hidden rounded-[24px] border border-white/10 bg-gradient-to-r from-electric-500/20 via-night-900/95 to-aqua-500/20 p-6 text-center shadow-[0_45px_160px_-70px_rgba(0,188,212,0.6)] sm:rounded-[28px] sm:p-8 md:rounded-[36px] md:p-10"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}

@@ -41,7 +41,7 @@ export default function Testimonials() {
         viewport={{ once: true, margin: "-120px" }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <div className="relative mx-auto max-w-4xl overflow-hidden rounded-[24px] border border-white/10 bg-night-900/75 shadow-[0_35px_120px_-70px_rgba(0,188,212,0.55)] sm:rounded-[32px]">
+        <div className="relative mx-auto max-w-4xl overflow-hidden rounded-[20px] border border-white/10 bg-night-900/75 shadow-[0_35px_120px_-70px_rgba(0,188,212,0.55)] sm:rounded-[24px] md:rounded-[32px]">
           <video
             ref={videoRef}
             className="w-full"
@@ -60,7 +60,7 @@ export default function Testimonials() {
         {copy.testimonials.quotes.map((quote, index) => (
           <motion.blockquote
             key={quote.quote}
-            className="group relative flex h-full flex-col gap-4 rounded-[24px] border border-white/10 bg-night-900/75 p-6 shadow-[0_35px_120px_-70px_rgba(0,188,212,0.55)] backdrop-blur-xl transition-all sm:rounded-[32px] sm:p-8"
+            className="group relative flex h-full flex-col gap-3 rounded-[20px] border border-white/10 bg-night-900/75 p-5 shadow-[0_35px_120px_-70px_rgba(0,188,212,0.55)] backdrop-blur-xl transition-all sm:gap-4 sm:rounded-[24px] sm:p-6 md:rounded-[32px] md:p-8"
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-120px" }}
@@ -78,13 +78,13 @@ export default function Testimonials() {
               "
             </motion.span>
             <p className="text-base font-medium leading-relaxed text-white sm:text-lg">{quote.quote}</p>
-            <footer className="flex items-center gap-3 text-xs font-semibold text-white/60 sm:text-sm">
+            <footer className="flex flex-col gap-3 text-xs font-semibold text-white/60 sm:flex-row sm:items-center sm:text-sm">
               <span className="flex-1">{quote.attribution}</span>
               {quote.logo && (
                 <img 
                   src={quote.logo} 
                   alt="" 
-                  className="h-8 w-auto object-contain opacity-80 sm:h-10"
+                  className="h-10 w-auto object-contain opacity-80 sm:h-12"
                 />
               )}
             </footer>

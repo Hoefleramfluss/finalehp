@@ -68,7 +68,7 @@ export default function Contact() {
         viewport={{ once: true, margin: "-120px" }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
       >
-        <div className="rounded-[32px] border border-white/10 bg-night-900/75 p-8 shadow-[0_35px_120px_-70px_rgba(0,188,212,0.55)] backdrop-blur-xl sm:p-10">
+        <div className="rounded-[24px] border border-white/10 bg-night-900/75 p-6 shadow-[0_35px_120px_-70px_rgba(0,188,212,0.55)] backdrop-blur-xl sm:rounded-[28px] sm:p-8 md:rounded-[32px] md:p-10">
           {submitStatus === "success" ? (
             <motion.div
               className="flex flex-col items-center gap-4 py-12 text-center"
@@ -184,26 +184,26 @@ export default function Contact() {
         </div>
 
         <motion.div
-          className="mt-8 grid gap-4 text-center sm:grid-cols-3"
+          className="mt-8 grid gap-3 text-center sm:grid-cols-3 sm:gap-4"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-120px" }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
         >
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-            <div className="text-2xl">📞</div>
-            <p className="mt-2 text-sm font-medium text-white/80">Schnelle Antwort</p>
-            <p className="text-xs text-white/50">Innerhalb 24h</p>
+          <div className="rounded-xl border border-white/10 bg-white/5 p-3.5 sm:rounded-2xl sm:p-4">
+            <div className="text-xl sm:text-2xl">📞</div>
+            <p className="mt-1.5 text-xs font-medium text-white/80 sm:mt-2 sm:text-sm">Schnelle Antwort</p>
+            <p className="text-[10px] text-white/50 sm:text-xs">Innerhalb 24h</p>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-            <div className="text-2xl">🔒</div>
-            <p className="mt-2 text-sm font-medium text-white/80">DSGVO-konform</p>
-            <p className="text-xs text-white/50">EU-Hosting</p>
+          <div className="rounded-xl border border-white/10 bg-white/5 p-3.5 sm:rounded-2xl sm:p-4">
+            <div className="text-xl sm:text-2xl">🔒</div>
+            <p className="mt-1.5 text-xs font-medium text-white/80 sm:mt-2 sm:text-sm">DSGVO-konform</p>
+            <p className="text-[10px] text-white/50 sm:text-xs">EU-Hosting</p>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-            <div className="text-2xl">🇦🇹</div>
-            <p className="mt-2 text-sm font-medium text-white/80">Made in Austria</p>
-            <p className="text-xs text-white/50">Support aus Österreich</p>
+          <div className="rounded-xl border border-white/10 bg-white/5 p-3.5 sm:rounded-2xl sm:p-4">
+            <div className="text-xl sm:text-2xl">🇦🇹</div>
+            <p className="mt-1.5 text-xs font-medium text-white/80 sm:mt-2 sm:text-sm">Made in Austria</p>
+            <p className="text-[10px] text-white/50 sm:text-xs">Support aus Österreich</p>
           </div>
         </motion.div>
       </motion.div>

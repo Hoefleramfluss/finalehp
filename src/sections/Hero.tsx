@@ -48,15 +48,15 @@ export default function Hero() {
         />
       </motion.div>
 
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 sm:gap-10">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 sm:gap-8 md:gap-10">
         <motion.div
-          className="inline-flex max-w-max items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.25em] text-white/70 backdrop-blur sm:gap-3 sm:px-4 sm:py-2 sm:text-xs"
+          className="inline-flex max-w-max items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/70 backdrop-blur sm:gap-3 sm:px-4 sm:py-2 sm:text-xs sm:tracking-[0.25em]"
           style={{ y: badgeY, opacity: subtitleOpacity }}
           whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
         >
           <Logo variant="compact" className="h-5 w-auto sm:h-6" alt="" aria-hidden />
           <span className="hidden sm:inline">{copy.site.shortTagline}</span>
-          <span className="sm:hidden">Made in Austria · DSGVO</span>
+          <span className="sm:hidden">🇦🇹 Austria · DSGVO</span>
         </motion.div>
 
         <div className="grid gap-8 sm:gap-10 md:grid-cols-[minmax(0,1fr)_340px] md:items-center md:gap-12">
@@ -71,7 +71,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p
-              className="mt-8 max-w-2xl text-base font-medium leading-relaxed text-white/90 sm:mt-10 sm:text-lg sm:leading-relaxed lg:text-xl"
+              className="max-w-2xl text-sm font-medium leading-relaxed text-white/85 sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
               style={{ opacity: subtitleOpacity }}
             >
               {copy.site.heroSubtitle}
@@ -106,13 +106,13 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              <ShimmerButton asLink href="#contact" className="justify-center px-6 py-3 text-sm sm:justify-start sm:px-7 sm:text-base">
+              <ShimmerButton asLink href="#contact" className="w-full justify-center px-6 py-3.5 text-sm font-semibold sm:w-auto sm:justify-start sm:px-8 sm:text-base">
                 {copy.site.ctaPrimary}
               </ShimmerButton>
               <button
                 type="button"
                 onClick={handleFunctionsClick}
-                className="group inline-flex items-center justify-center gap-2 rounded-2xl border border-white/15 px-5 py-3 text-sm font-medium text-white/80 backdrop-blur transition hover:border-electric-500/70 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-electric-500 sm:px-6 sm:text-base"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-5 py-3.5 text-sm font-medium text-white/80 backdrop-blur transition hover:border-electric-500/70 hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-electric-500 sm:w-auto sm:px-6 sm:text-base"
               >
                 {copy.site.ctaSecondary}
                 <span className="translate-y-px transition-transform group-hover:translate-x-1">
@@ -143,7 +143,7 @@ export default function Hero() {
           </div>
 
           <motion.div
-            className="relative overflow-hidden rounded-[24px] border border-white/10 bg-white/5 p-5 backdrop-blur-xl sm:rounded-[32px] sm:p-6"
+            className="relative overflow-hidden rounded-[20px] border border-white/10 bg-white/5 p-4 backdrop-blur-xl sm:rounded-[24px] sm:p-5 md:rounded-[32px] md:p-6"
             initial={{ opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.35, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -155,7 +155,7 @@ export default function Hero() {
               src="/voxon-logo.png"
               alt="Voxon.ai"
               aria-hidden="true"
-              className="pointer-events-none select-none absolute -top-3 -right-3 md:-top-3 md:-right-3 h-6 md:h-7 opacity-90 drop-shadow z-10"
+              className="pointer-events-none select-none absolute -top-2 -right-2 h-5 opacity-80 drop-shadow-lg sm:-top-3 sm:-right-3 sm:h-6 sm:opacity-90 md:h-7 z-10"
             />
             
             <div className="flex items-center justify-between text-[10px] font-medium text-white/60 sm:text-xs">
@@ -178,22 +178,22 @@ export default function Hero() {
               ))}
             </div>
             <motion.div 
-              className="mt-5 rounded-xl border border-white/10 bg-gradient-to-r from-electric-500/20 to-electric-400/20 p-4 sm:mt-6 sm:rounded-2xl sm:p-5"
+              className="mt-4 rounded-xl border border-white/10 bg-gradient-to-r from-electric-500/20 to-electric-400/20 p-3.5 sm:mt-5 sm:rounded-2xl sm:p-4 md:mt-6 md:p-5"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
               whileHover={{ scale: 1.02 }}
             >
-              <p className="text-xs font-semibold text-white/70 sm:text-sm">Reelles Beispiel eines Kunden:</p>
-              <p className="mt-2 text-lg font-bold leading-snug text-white sm:mt-3 sm:text-xl">
+              <p className="text-[11px] font-semibold text-white/70 sm:text-xs md:text-sm">Reelles Beispiel:</p>
+              <p className="mt-1.5 text-base font-bold leading-tight text-white sm:mt-2 sm:text-lg sm:leading-snug md:mt-3 md:text-xl">
                 Durch automatisierte Erinnerungen ca. 9 Behandlungstermine / Woche mehr!
               </p>
-              <p className="mt-2 flex flex-wrap items-center gap-2 text-[10px] font-medium text-white/60 sm:text-xs">
+              <p className="mt-2 flex flex-wrap items-center gap-1.5 text-[9px] font-medium text-white/60 sm:gap-2 sm:text-[10px] md:text-xs">
                 <span>🔒 DSGVO</span>
                 <span>·</span>
-                <span>🇪🇺 EU-Hosting</span>
+                <span>🇪🇺 EU</span>
                 <span>·</span>
-                <span>🇦🇹 Made in Austria</span>
+                <span>🇦🇹 Austria</span>
               </p>
             </motion.div>
           </motion.div>

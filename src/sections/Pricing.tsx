@@ -82,12 +82,12 @@ export default function Pricing() {
         </motion.div>
       </div>
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-12 grid gap-5 sm:gap-6 sm:grid-cols-2 xl:grid-cols-4">
         {copy.pricing.plans.map((plan, index) => (
           <motion.article
             key={plan.name}
             className={clsx(
-              "group relative flex flex-col gap-5 rounded-[28px] border p-7 backdrop-blur-xl transition-all duration-300",
+              "group relative flex flex-col gap-4 rounded-[24px] border p-6 backdrop-blur-xl transition-all duration-300 sm:gap-5 sm:rounded-[28px] sm:p-7",
               {
                 "border-electric-500/60 bg-gradient-to-br from-electric-500/15 via-night-900/90 to-night-900/90 shadow-[0_35px_120px_-60px_rgba(0,188,212,0.7)] hover:shadow-[0_35px_140px_-50px_rgba(0,188,212,0.85)]": 
                   plan.popular,
