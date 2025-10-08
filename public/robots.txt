@@ -1,0 +1,23 @@
+# Voxon.ai Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+Disallow: /*.json$
+Disallow: /*?utm_*
+
+# Sitemaps
+Sitemap: https://www.voxon.app/sitemap.xml
+
+# Crawl-delay für respektvolles Crawling
+Crawl-delay: 1
+
+# Spezifische Bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /

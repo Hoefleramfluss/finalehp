@@ -1,12 +1,12 @@
 export const copy = {
   site: {
     name: "Voxon.ai",
-    shortTagline: "Voicebots für KMU · DSGVO-konform · Made in Austria",
+    shortTagline: "Voice AI für Österreich · DSGVO-konform · EU-Hosting",
     description:
-      "Ob Gastro, Ordination oder Werkstatt: Voxon.ai kümmert sich rund um die Uhr um Anrufe, Termine & Rückfragen – DSGVO-sicher, menschlich & effizient.",
-    heroTitle: "Gewinnen Sie jeden Kunden – Ihr KI-Agent nimmt jeden Anruf entgegen",
+      "Voicebot Deutsch für automatische Terminbuchung. Ob Gastro, Ordination oder Werkstatt: Voxon.ai kümmert sich 24/7 um Anrufe & Termine – DSGVO-konform mit EU-Hosting.",
+    heroTitle: "Voicebot Deutsch für automatische Terminbuchung – 24/7 erreichbar",
     heroSubtitle:
-      "Ihr KI-Voice-Agent bucht Termine, beantwortet Fragen und lernt täglich dazu – 24/7 erreichbar, perfekt integriert in Ihre Systeme.",
+      "Dein KI-Voice-Agent bucht Termine, beantwortet Fragen und lernt täglich dazu – nahtlos integriert in Kalender, CRM & Reservierungstools. In unter 48h einsatzbereit.",
     ctaPrimary: "→ Kostenlose Demo vereinbaren",
     ctaSecondary: "→ Live-Demo anhören (1:28 Min.)",
     heroOptions: [
@@ -29,9 +29,9 @@ export const copy = {
       "✅ 🇦🇹 Made in Austria",
     ],
     meta: {
-      title: "Voicebots für KMU – DSGVO-konform & made in Austria | Voxon.ai",
+      title: "Voicebot Deutsch – Termine 24/7 automatisch | Voxon.ai",
       description:
-        "Voice- und Chat-Agenten für Gastro, Medizin & Werkstätten. 24/7 verfügbar, EU-Hosting & kein Abo-Stress. Voxon.ai – der smarte Assistent für dein Business.",
+        "KI-Voice-Agent auf Deutsch. 24/7 erreichbar, <48h integriert, No-Shows −45%. DSGVO-konform mit EU-Hosting. Jetzt Demo buchen.",
       ogImage: "/og-image.png",
     },
     trustBadges: [
