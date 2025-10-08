@@ -105,7 +105,7 @@ export default function Pricing() {
           >
             {plan.popular && (
               <motion.span 
-                className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center whitespace-nowrap rounded-full border border-electric-500/40 bg-electric-500/20 px-3 py-1 text-[10px] font-extrabold uppercase tracking-wide text-electric-100 shadow-lg"
+                className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-electric-400 bg-gradient-to-r from-electric-500 to-electric-400 px-4 py-1.5 text-xs font-extrabold uppercase tracking-wide text-white shadow-[0_0_20px_rgba(0,188,212,0.6)]"
                 initial={{ scale: 0.9, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
@@ -116,7 +116,7 @@ export default function Pricing() {
             
             {plan.enterprise && (
               <motion.span 
-                className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center whitespace-nowrap rounded-full border border-electric-400/50 bg-electric-400/25 px-3 py-1 text-[10px] font-extrabold uppercase tracking-wide text-white shadow-lg"
+                className="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center justify-center whitespace-nowrap rounded-full border-2 border-yellow-400 bg-gradient-to-r from-yellow-500 to-amber-400 px-4 py-1.5 text-xs font-extrabold uppercase tracking-wide text-night-900 shadow-[0_0_20px_rgba(251,191,36,0.6)]"
                 initial={{ scale: 0.9, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
