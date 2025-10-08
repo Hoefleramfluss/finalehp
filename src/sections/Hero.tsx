@@ -3,7 +3,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 import VideoBackground from "@/components/ui/VideoBackground";
 import ShimmerButton from "@/components/ui/ShimmerButton";
-import Logo from "@/components/Logo";
 import { copy } from "@/copy";
 
 export default function Hero() {
@@ -50,13 +49,17 @@ export default function Hero() {
 
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 sm:gap-8 md:gap-10">
         <motion.div
-          className="inline-flex max-w-max items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/70 backdrop-blur sm:gap-3 sm:px-4 sm:py-2 sm:text-xs sm:tracking-[0.25em]"
+          className="flex justify-center"
           style={{ y: badgeY, opacity: subtitleOpacity }}
-          whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <Logo variant="compact" className="h-5 w-auto sm:h-6" alt="" aria-hidden />
-          <span className="hidden sm:inline">{copy.site.shortTagline}</span>
-          <span className="sm:hidden">🇦🇹 Austria · DSGVO</span>
+          <img 
+            src="/voxon-logo.png" 
+            alt="Voxon.ai" 
+            className="h-16 w-auto sm:h-20 md:h-24 opacity-90 transition-opacity hover:opacity-100"
+          />
         </motion.div>
 
         <div className="grid gap-8 sm:gap-10 md:grid-cols-[minmax(0,1fr)_340px] md:items-center md:gap-12">

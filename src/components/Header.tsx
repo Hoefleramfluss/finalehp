@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { MenuIcon, CloseIcon } from "@/components/icons";
-import Logo from "@/components/Logo";
 import Lines from "@/components/ui/Lines";
 import { copy } from "@/copy";
 
@@ -62,17 +61,9 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Center: Logo (absolut zentriert) */}
+          {/* Center: Spacer (Logo entfernt) */}
           <div className="absolute inset-x-0 flex justify-center pointer-events-none">
-            <motion.a 
-              href="/" 
-              aria-label="Voxon.ai Startseite"
-              className="pointer-events-auto"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <Logo variant="default" className="h-7 w-auto sm:h-8" />
-            </motion.a>
+            {/* Logo entfernt gemäß Anforderung */}
           </div>
 
           {/* Right: Navigation + CTA + Mobile Toggle */}
