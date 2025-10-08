@@ -4,7 +4,7 @@ export const copy = {
     shortTagline: "Voice AI für Österreich · DSGVO-konform · EU-Hosting",
     description:
       "Voicebot Deutsch für automatische Terminbuchung. Ob Gastro, Ordination oder Werkstatt: Voxon.ai kümmert sich 24/7 um Anrufe & Termine – DSGVO-konform mit EU-Hosting.",
-    heroTitle: "Voicebot Deutsch für automatische Terminbuchung – 24/7 erreichbar",
+    heroTitle: "Spricht mit deinen Kunden. Bucht Termine. Arbeitet 24/7 – dein KI-Voicebot von Voxon.ai.",
     heroSubtitle:
       "Dein KI-Voice-Agent bucht Termine, beantwortet Fragen und lernt täglich dazu – nahtlos integriert in Kalender, CRM & Reservierungstools. In unter 48h einsatzbereit.",
     ctaPrimary: "→ Kostenlose Demo vereinbaren",
