@@ -58,7 +58,7 @@ export default function Hero() {
           <img 
             src="/voxon-logo.png" 
             alt="Voxon.ai" 
-            className="h-16 w-auto sm:h-20 md:h-24 opacity-90 transition-opacity hover:opacity-100"
+            className="h-32 w-auto sm:h-40 md:h-48 lg:h-56 opacity-90 transition-opacity hover:opacity-100"
           />
         </motion.div>
 
@@ -153,13 +153,6 @@ export default function Hero() {
             whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
             aria-label="Live KPI Übersicht"
           >
-            {/* Logo overlay - oben rechts ohne Reflow */}
-            <img
-              src="/voxon-logo.png"
-              alt="Voxon.ai"
-              aria-hidden="true"
-              className="pointer-events-none select-none absolute -top-2 -right-2 h-5 opacity-80 drop-shadow-lg sm:-top-3 sm:-right-3 sm:h-6 sm:opacity-90 md:h-7 z-10"
-            />
             
             <div className="flex items-center justify-between text-[10px] font-medium text-white/60 sm:text-xs">
               <span>Bewährte Ergebnisse</span>
