@@ -11,9 +11,35 @@ export default function VideoBackground({ src, opacity = 0.35, className = "" }:
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.8;
-    }
+    const video = videoRef.current;
+    if (!video) return;
+
+    video.playbackRate = 0.8;
+
+    // Explizit Video starten für Mobile-Browser
+    const playVideo = () => {
+      video.play().catch(() => {
+        // Fallback: Bei Autoplay-Blockierung
+        console.log('Autoplay blocked, waiting for user interaction');
+      });
+    };
+
+    // Intersection Observer für bessere Mobile-Unterstützung
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            playVideo();
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(video);
+    playVideo(); // Sofort versuchen
+
+    return () => observer.disconnect();
   }, []);
 
   return (

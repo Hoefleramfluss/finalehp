@@ -32,20 +32,6 @@ export default function Hero() {
     >
       <VideoBackground src="/hero-video1.mp4" opacity={0.3} />
 
-      {/* Large Logo Top Right - Positioned over stats box */}
-      <motion.div
-        className="absolute right-0 top-24 z-10 hidden lg:block lg:right-8 xl:right-16"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
-        style={{ opacity: subtitleOpacity }}
-      >
-        <img
-          src="/voxon-logo.png"
-          alt="Voxon.ai Logo"
-          className="h-28 w-auto opacity-90 transition-opacity hover:opacity-100 lg:h-32 xl:h-36"
-        />
-      </motion.div>
 
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 sm:gap-8 md:gap-10">
         <motion.div
@@ -74,7 +60,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p
-              className="max-w-2xl text-sm font-medium leading-relaxed text-white/85 sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
+              className="mt-6 max-w-2xl text-sm font-medium leading-relaxed text-white/85 sm:mt-8 sm:text-base sm:leading-relaxed md:text-lg lg:text-xl"
               style={{ opacity: subtitleOpacity }}
             >
               {copy.site.heroSubtitle}
