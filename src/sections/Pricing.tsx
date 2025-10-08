@@ -117,7 +117,7 @@ export default function Pricing() {
             
             {plan.enterprise && (
               <motion.span 
-                className="absolute -top-[10px] left-1/2 -translate-x-1/2 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-yellow-400 bg-gradient-to-r from-yellow-500 to-amber-400 px-2.5 py-0.5 text-[8px] font-extrabold uppercase tracking-wide text-night-900 shadow-[0_0_12px_rgba(251,191,36,0.5)]"
+                className="absolute -top-[10px] left-[calc(50%+3px)] -translate-x-1/2 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-yellow-400 bg-gradient-to-r from-yellow-500 to-amber-400 px-2.5 py-0.5 text-[8px] font-extrabold uppercase tracking-wide text-night-900 shadow-[0_0_12px_rgba(251,191,36,0.5)]"
                 initial={{ scale: 0, opacity: 0, y: -10 }}
                 whileInView={{ scale: 1, opacity: 1, y: 0 }}
                 viewport={{ once: true }}
