@@ -105,10 +105,11 @@ export default function Pricing() {
           >
             {plan.popular && (
               <motion.span 
-                className="absolute -top-2.5 left-1/2 -translate-x-1/2 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-electric-400 bg-gradient-to-r from-electric-500 to-electric-400 px-3 py-1 text-[10px] font-extrabold uppercase tracking-wide text-white shadow-[0_0_15px_rgba(0,188,212,0.5)]"
-                initial={{ scale: 0.9, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
+                className="absolute -top-[10px] left-1/2 -translate-x-1/2 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-electric-400 bg-gradient-to-r from-electric-500 to-electric-400 px-2.5 py-0.5 text-[8px] font-extrabold uppercase tracking-wide text-white shadow-[0_0_12px_rgba(0,188,212,0.5)]"
+                initial={{ scale: 0, opacity: 0, y: -10 }}
+                whileInView={{ scale: 1, opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 + index * 0.1, type: "spring", stiffness: 300, damping: 20 }}
               >
                 ⭐ Meistgewählt
               </motion.span>
@@ -116,10 +117,11 @@ export default function Pricing() {
             
             {plan.enterprise && (
               <motion.span 
-                className="absolute -top-2.5 left-1/2 -translate-x-1/2 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-yellow-400 bg-gradient-to-r from-yellow-500 to-amber-400 px-3 py-1 text-[10px] font-extrabold uppercase tracking-wide text-night-900 shadow-[0_0_15px_rgba(251,191,36,0.5)]"
-                initial={{ scale: 0.9, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
+                className="absolute -top-[10px] left-1/2 -translate-x-1/2 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-yellow-400 bg-gradient-to-r from-yellow-500 to-amber-400 px-2.5 py-0.5 text-[8px] font-extrabold uppercase tracking-wide text-night-900 shadow-[0_0_12px_rgba(251,191,36,0.5)]"
+                initial={{ scale: 0, opacity: 0, y: -10 }}
+                whileInView={{ scale: 1, opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 + index * 0.1, type: "spring", stiffness: 300, damping: 20 }}
               >
                 💎 Premium
               </motion.span>
