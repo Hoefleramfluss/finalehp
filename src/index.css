@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #040813;
+}
+
+body {
+  background-color: #040813;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(circle at 20% 20%, rgba(0, 174, 243, 0.12), transparent 55%),
+    radial-gradient(circle at 80% 0%, rgba(0, 135, 209, 0.08), transparent 60%);
+}
+
+a {
+  color: #39d0ff;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus-visible {
+  color: #6cefff;
+}
+
+::selection {
+  background-color: rgba(0, 174, 243, 0.4);
+  color: #ffffff;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid rgba(0, 174, 243, 0.6);
+  outline-offset: 4px;
+}

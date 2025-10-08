@@ -1,45 +1,80 @@
 
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="bg-night-900">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workflow AI – Die Zukunft der Prozessautomatisierung</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070713" />
+    <title>Workflow AI – Futuristische KI-Agenten, die Termine buchen</title>
+    <meta
+      name="description"
+      content="Erlebe Workflow AI: deutschsprachige Voice-Bots mit DSGVO, EU-Hosting und ROI-Kalkulator. Automatisiere Terminbuchungen, Support und Lead-Qualifizierung."
+    />
+    <link rel="canonical" href="https://workflow-ai-homepage-480743766879.us-west1.run.app/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://workflow-ai-homepage-480743766879.us-west1.run.app/" />
+    <meta property="og:title" content="Workflow AI – Futuristische KI-Agenten, die Termine buchen" />
+    <meta
+      property="og:description"
+      content="Deutschsprachige Voice-Agenten, die automatisch Termine qualifizieren, buchen und dokumentieren – DSGVO, EU-Hosting, Twilio-ready."
+    />
+    <meta property="og:image" content="/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Workflow AI – Futuristische KI-Agenten" />
+    <meta
+      name="twitter:description"
+      content="Workflow AI baut KI-Agenten, die wie Ihr Top-Team telefonieren und Termine fixieren."
+    />
+    <meta name="twitter:image" content="/og-image.png" />
+    <meta name="color-scheme" content="dark" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Workflow AI",
+        "url": "https://workflow-ai-homepage-480743766879.us-west1.run.app/",
+        "logo": "https://workflow-ai-homepage-480743766879.us-west1.run.app/favicon.svg",
+        "sameAs": [
+          "https://www.linkedin.com/company/workflow-ai",
+          "https://twitter.com/workflowai"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "hello@workflow.ai",
+          "areaServed": "AT, DE, EU",
+          "availableLanguage": ["de", "en"]
+        }
       }
-      .gradient-border::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        border-radius: 1rem; /* or any value you want */
-        padding: 2px;
-        background: linear-gradient(135deg, rgba(67, 83, 255, 0.6), rgba(0, 245, 255, 0.6));
-        -webkit-mask: 
-            linear-gradient(#fff 0 0) content-box, 
-            linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-        mask-composite: exclude;
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Workflow AI Voice Agent",
+        "description": "KI-Agenten, die Verkäufe automatisieren und Termine buchen.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Workflow AI"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "249",
+          "availability": "https://schema.org/InStock"
+        }
       }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/"
-  }
-}
-</script>
-</head>
-  <body>
+    </script>
+  </head>
+  <body class="min-h-screen bg-night-900 text-white">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

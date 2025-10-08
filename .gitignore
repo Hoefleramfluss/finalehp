@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Generated files and assets
+Generated File*.mp4
+*.jpg
+*.png
+*.mp3
+testaudio.mp3
+
+# Firebase
+.firebase/
+.firebaserc
+firebase.json
