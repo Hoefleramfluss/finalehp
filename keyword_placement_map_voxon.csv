@@ -1,0 +1,20 @@
+Page/Sektion,Ziel-Keyword(s),Platzierung,Empf. Häufigkeit,Ankertexte (intern),Ziel-URLs,Bemerkungen
+Home – H1,voicebot deutsch; automatische terminbuchung,H1 (Startseite),1× exakt (H1),Preise; Integrationen; Branchen,/preise; /integrationen; /branchen,Primäres Query; kein Keyword-Stuffing im H1-Text.
+Home – Intro (1. Absatz),ki voice agent; ki telefonassistent; voice ai deutsch,1. und 2. Satz,je 1× natürlich,Demo buchen; Testen,/kontakt; /preise,"Varianten/LSI einstreuen (NLP, STT/TTS, Conversational AI)."
+Home – Warum Voice Agent (H2),sprachbot für unternehmen; telefon ki,H2 + erster Absatz,1× H2; 1× Absatz,Was ist ein Voice Agent?,/voicebot-deutsch,Definition + Nutzen klar darstellen.
+Home – Use Cases (H3),telefonbot für termine; automatische terminbuchung,H3 + Bullets,1–2× gesamt,Branchen; Integrationen,/branchen; /integrationen,Beispiele mit konkreten Aufgaben.
+Home – Integrationen (H2/H3),ki terminbuchung; crm integration; kalender sync,H2 + 1. Absatz + Liste,2–3× verteilt,Integrations-Liste,/integrationen,"Marken nennen (Resmio, Doctolib, Google Calendar, etc.)."
+Home – Ergebnisse (H2/H3),no-shows reduzieren; erreichbarkeit erhöhen,H2 + H3,1–2×,ROI-Rechner; Preise,/ki-terminbuchung; /preise,Zahlen konservativ formulieren.
+Home – Dialekte (H2/H3),voice ai deutsch; wienerisch; hochdeutsch,H2 + Absatz,1× je Begriff,Demo (Stimmen),/kontakt,Natürlichkeit betonen; keine ‚100%‘-Claims.
+Home – DSGVO (H2/H3),dsgvo konform; eu hosting,H2 + erster Satz,1–2×,AV-Vertrag; Datenschutz,/kontakt; /datenschutz,Hinweis: Datenschutz-Hinweise auf Nachfrage.
+Home – Preise (H2/H3),minutenpreise voicebot; transparente kosten,H2 + Absatz,1× je Begriff,Pakete & Minuten,/preise,Beispielrechnung einbauen.
+Branchen – Gastronomie (H3),voice bot für restaurants; telefonbot gastronomie,H3 + Absatz,1–2×,Branchenübersicht; Gastronomie-LP,/branchen; /branchen/gastronomie,"No-Show-Reduktion, Schlechtwetter-Umbuchung erwähnen."
+Branchen – Medizin (H3),ki für arztpraxen terminbuchung; telefonassistent praxis,H3 + Absatz,1–2×,Medizin-LP,/branchen/medizin,"SV-Eingabe, Akutfall-Priorisierung."
+Branchen – Werkstatt (H3),voicebot werkstatt; terminvereinbarung räderwechsel,H3 + Absatz,1–2×,Werkstatt-LP,/branchen/werkstatt,Proaktive Outbound-Kampagnen.
+Vergleich (H2/H3),voice agent vs ivr; menschliche rezeption vs voicebot,H2 + Tabelle,1× je Begriff,Demo vergleichen,/kontakt,"Neutraler Ton, Vorteile transparent."
+So startest du (H2/H3),einrichtung <48h; schnelle integration,H2 + Schritte,1–2×,Kontakt; Integrationen,/kontakt; /integrationen,Akzeptanzkriterien erwähnen.
+FAQ (H2),ist voicebot dsgvo konform; was kostet voice agent,Fragenformulierung,je 1×,Datenschutz; Preise,/datenschutz; /preise,Snippet-fähige Antworten (40–60 Wörter).
+Footer/Trust,made in austria; eu hosting; dsgvo-konform,Trust-Badges; Footer-Text,1×,Impressum; Datenschutz,/impressum; /datenschutz,"NAP-Konsistenz (Adresse, Telefon)."
+LP – /voicebot-deutsch,voicebot deutsch; sprachassistent telefon,H1 + Intro + H2,P:1–2%; S:0.5–1%,Home; Preise; Demo,/; /preise; /kontakt,Cornerstone-Page mit Video.
+LP – /ki-terminbuchung,ki terminbuchung; automatische terminvereinbarung telefon,H1 + Use Cases,P:1–2%; LT: natürlich,ROI; Integrationen,/ki-terminbuchung; /integrationen,ROI-Rechner verlinken.
+LP – /integrationen,crm integration; kalender sync; resmio; doctolib,Listen/Logos,natürlich,Preise; Demo,/preise; /kontakt,Marken-Keywords behutsam einsetzen.
