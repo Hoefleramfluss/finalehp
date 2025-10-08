@@ -70,21 +70,32 @@ export default function SEO({
       link.setAttribute('href', canonical);
     }
 
-    // JSON-LD
+    // JSON-LD (@graph-based or array)
     if (jsonLd) {
-      const schemas = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
-      
       // Remove old JSON-LD scripts (except Organization and WebSite from index.html)
       document.querySelectorAll('script[type="application/ld+json"][data-dynamic="true"]').forEach(el => el.remove());
       
-      // Add new ones
-      schemas.forEach((schema) => {
+      // Support both @graph-based bundles and arrays
+      const isGraphBased = jsonLd && typeof jsonLd === 'object' && '@graph' in jsonLd;
+      
+      if (isGraphBased) {
+        // Single @graph bundle (Best Practice 2025)
         const script = document.createElement('script');
         script.type = 'application/ld+json';
         script.setAttribute('data-dynamic', 'true');
-        script.text = JSON.stringify(schema);
+        script.text = JSON.stringify(jsonLd);
         document.head.appendChild(script);
-      });
+      } else {
+        // Legacy: multiple separate schemas
+        const schemas = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
+        schemas.forEach((schema) => {
+          const script = document.createElement('script');
+          script.type = 'application/ld+json';
+          script.setAttribute('data-dynamic', 'true');
+          script.text = JSON.stringify(schema);
+          document.head.appendChild(script);
+        });
+      }
     }
 
     // Cleanup function
