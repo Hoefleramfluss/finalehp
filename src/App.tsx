@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Analytics from "@/components/Analytics";
 import Hero from "@/sections/Hero";
 import Why from "@/sections/Why";
 import Functions from "@/sections/Functions";
@@ -12,6 +13,7 @@ import CTA from "@/sections/CTA";
 function App() {
   return (
     <div className="relative min-h-screen bg-night-900 text-white">
+      <Analytics />
       <Header />
       <main className="relative isolate flex flex-col gap-28">
         <Hero />

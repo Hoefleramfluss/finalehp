@@ -1,15 +1,15 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-
-import VideoBackground from "@/components/ui/VideoBackground";
 import ShimmerButton from "@/components/ui/ShimmerButton";
+import VideoBackground from "@/components/ui/VideoBackground";
 import { copy } from "@/copy";
+import { trackEvent } from "@/components/Analytics";
 
 export default function Hero() {
   const ref = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "end start"],
+    offset: ["start start", "end start"],
   });
 
   const titleY = useTransform(scrollYProgress, [0, 1], [0, 60]);
@@ -17,6 +17,7 @@ export default function Hero() {
   const badgeY = useTransform(scrollYProgress, [0, 1], [0, 40]);
 
   const handleFunctionsClick = () => {
+    trackEvent('cta_click', { cta_type: 'secondary', cta_text: 'Live-Demo anhören' });
     const section = document.getElementById("functions");
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -95,7 +96,12 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
             >
-              <ShimmerButton asLink href="#contact" className="w-full justify-center px-6 py-3.5 text-sm font-semibold sm:w-auto sm:justify-start sm:px-8 sm:text-base">
+              <ShimmerButton 
+                asLink 
+                href="#contact" 
+                className="w-full justify-center px-6 py-3.5 text-sm font-semibold sm:w-auto sm:justify-start sm:px-8 sm:text-base"
+                onClick={() => trackEvent('cta_click', { cta_type: 'primary', cta_text: copy.site.ctaPrimary, section: 'hero' })}
+              >
                 {copy.site.ctaPrimary}
               </ShimmerButton>
               <button
