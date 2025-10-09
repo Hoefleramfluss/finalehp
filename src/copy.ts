@@ -30,10 +30,11 @@ export const copy = {
       "In 89% aller Sprachen und Dialekte der Welt",
     ],
     meta: {
-      title: "Voicebot Deutsch – Termine 24/7 automatisch | Voxon.ai",
+      title: "Voxon.ai – KI-Voice & Chatbots aus Österreich | 24/7",
       description:
-        "KI-Voice-Agent auf Deutsch. 24/7 erreichbar, <48h integriert, No-Shows −45%. DSGVO-konform mit EU-Hosting. Jetzt Demo buchen.",
+        "Mehrsprachige KI-Voice-Agents & Chatbots. 24/7 erreichbar, DSGVO-konform, in 48 h startklar. Terminbuchung & Kundenservice automatisieren – Demo sichern.",
       ogImage: "/og-image.png",
+      canonical: "https://www.voxon.app/",
     },
     trustBadges: [
       "🇦🇹 Made in Austria",

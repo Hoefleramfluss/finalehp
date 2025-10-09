@@ -11,6 +11,7 @@ interface SEOProps {
   twitterTitle?: string;
   twitterDescription?: string;
   jsonLd?: object | object[];
+  hreflang?: Array<{ lang: string; url: string }>;
 }
 
 export default function SEO({
@@ -24,6 +25,7 @@ export default function SEO({
   twitterTitle,
   twitterDescription,
   jsonLd,
+  hreflang,
 }: SEOProps) {
   useEffect(() => {
     // Set document title
@@ -70,6 +72,21 @@ export default function SEO({
       link.setAttribute('href', canonical);
     }
 
+    // Hreflang links
+    if (hreflang) {
+      // Remove existing hreflang links
+      document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(el => el.remove());
+      
+      // Add new hreflang links
+      hreflang.forEach(({ lang, url }) => {
+        const link = document.createElement('link');
+        link.setAttribute('rel', 'alternate');
+        link.setAttribute('hreflang', lang);
+        link.setAttribute('href', url);
+        document.head.appendChild(link);
+      });
+    }
+
     // JSON-LD (@graph-based or array)
     if (jsonLd) {
       // Remove old JSON-LD scripts (except Organization and WebSite from index.html)
@@ -105,7 +122,7 @@ export default function SEO({
         document.querySelectorAll('script[type="application/ld+json"][data-dynamic="true"]').forEach(el => el.remove());
       }
     };
-  }, [title, description, canonical, ogTitle, ogDescription, ogImage, ogUrl, twitterTitle, twitterDescription, jsonLd]);
+  }, [title, description, canonical, ogTitle, ogDescription, ogImage, ogUrl, twitterTitle, twitterDescription, jsonLd, hreflang]);
 
   return null; // This component doesn't render anything
 }
