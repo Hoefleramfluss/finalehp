@@ -174,7 +174,7 @@ export default function Hero() {
             >
               <p className="text-[11px] font-semibold text-white/70 sm:text-xs md:text-sm">Reelles Beispiel:</p>
               <p className="mt-1.5 text-base font-bold leading-tight text-white sm:mt-2 sm:text-lg sm:leading-snug md:mt-3 md:text-xl">
-                Durch automatisierte Erinnerungen ca. 9 Behandlungstermine / Woche mehr!
+                Durch vordefinierte kategorische OUTBOUND Calls ca. 9 Off-Medical Behandlungstermine / Woche mehr!
               </p>
               <p className="mt-2 flex flex-wrap items-center gap-1.5 text-[9px] font-medium text-white/60 sm:gap-2 sm:text-[10px] md:text-xs">
                 <span>🔒 DSGVO</span>

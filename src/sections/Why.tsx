@@ -87,14 +87,15 @@ export default function Why() {
             {copy.why.highlights.map((item, idx) => (
               <motion.div
                 key={item.text}
-                className="rounded-2xl border border-white/10 bg-white/5 px-4 py-5 text-center text-white"
+                className="relative rounded-2xl border border-electric-400/30 bg-gradient-to-br from-electric-500/10 to-electric-400/5 px-4 py-5 text-center text-white overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:bg-[linear-gradient(110deg,transparent,rgba(0,188,212,0.2),transparent)] hover:before:animate-shimmerAlt"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 + idx * 0.1, duration: 0.3 }}
+                whileHover={{ scale: 1.05, y: -4 }}
               >
-                <p className="text-xs text-white/60 sm:text-sm">{item.text}</p>
-                <p className="mt-2 text-2xl font-bold sm:text-3xl">{item.label}</p>
+                <p className="relative z-10 text-xs text-white/60 sm:text-sm">{item.text}</p>
+                <p className="relative z-10 mt-2 text-2xl font-bold sm:text-3xl">{item.label}</p>
               </motion.div>
             ))}
           </div>

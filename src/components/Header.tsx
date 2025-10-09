@@ -61,9 +61,15 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Center: Spacer (Logo entfernt) */}
-          <div className="absolute inset-x-0 flex justify-center pointer-events-none">
-            {/* Logo entfernt gemäß Anforderung */}
+          {/* Center: Logo */}
+          <div className="absolute inset-x-0 flex justify-center pointer-events-auto">
+            <a href="/" className="flex items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-electric-500">
+              <img 
+                src="/voxon-logo.png" 
+                alt="VoxOn.ai" 
+                className="h-12 w-auto sm:h-14 md:h-16"
+              />
+            </a>
           </div>
 
           {/* Right: Navigation + CTA + Mobile Toggle */}

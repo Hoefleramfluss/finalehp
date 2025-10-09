@@ -23,10 +23,11 @@ export const copy = {
       faq: "Häufige Fragen",
     },
     heroBadges: [
-      "✅ Inbound & Outbound",
-      "✅ Alle Branchen & Systeme",
-      "✅ Dialekt nach Wunsch",
-      "✅ 🇦🇹 Made in Austria",
+      "Inbound/Outbound System",
+      "WhatsApp- oder Telegramintegration",
+      "Automatische Terminerinnerung",
+      "vordefiniertes Up-Selling beim Outbound terminisieren",
+      "In 89% aller Sprachen und Dialekte der Welt",
     ],
     meta: {
       title: "Voicebot Deutsch – Termine 24/7 automatisch | Voxon.ai",
@@ -89,10 +90,6 @@ export const copy = {
       {
         label: "10.000+",
         text: "Anrufe pro Monat",
-      },
-      {
-        label: "50.000+",
-        text: "Toolaufrufe/Termine",
       },
     ],
   },
@@ -245,6 +242,16 @@ export const copy = {
         question: "Was passiert, wenn etwas nicht klappt?",
         answer:
           "Unser Support-Team in Österreich ist für dich da – per E-Mail, Telegram oder Notfall-SMS. Sollte der Bot komplett down sein, sind wir innerhalb 30 Minuten erreichbar!",
+      },
+      {
+        question: "🧩 Kann ich meinen Voicebot selbst einrichten und nach meinen Wünschen anpassen?",
+        answer:
+          "Ja, klar. Unsere SaaS-Plattform ist seit Juli im finalen Testbetrieb und ermöglicht dir schon bald, deine eigenen Voice- und Chatbots komplett selbst zu verwalten, anzupassen und abzurechnen – alles in einer Oberfläche, made in Austria. Der entscheidende Vorteil: Im Gegensatz zu anderen österreichischen Anbietern speichern und verarbeiten wir sämtliche Daten ausschließlich innerhalb der EU – DSGVO-konform, transparent und strukturiert. Und das Ganze rund 60 % günstiger pro Minute als vergleichbare Lösungen.",
+      },
+      {
+        question: "🇦🇹 Warum VoxOn.ai – und nicht die Konkurrenz?",
+        answer:
+          'Viele Anbieter verlangen in den ersten Jahren überzogene Preise, weil es kaum Referenzen oder echte Vergleichswerte gibt. VoxOn.ai steht für das Gegenteil: faire Preise, EU-Hosting mit maximalem Datenschutz, moderne Technologie und persönlichen Support aus Österreich. Unser Ziel ist es zu zeigen, dass erstklassige KI-Lösungen nicht teuer sein müssen – ganz nach unserem Motto: „Künstliche Intelligenz für jedermann zugänglich und leistbar machen."',
       },
     ],
   },
