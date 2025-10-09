@@ -90,6 +90,10 @@ export const copy = {
         label: "10.000+",
         text: "Anrufe pro Monat",
       },
+      {
+        label: "50.000+",
+        text: "Toolaufrufe/Termine",
+      },
     ],
   },
   functions: {
