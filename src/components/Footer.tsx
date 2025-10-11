@@ -67,6 +67,28 @@ export default function Footer() {
         ))}
       </div>
       <div className="border-t border-white/10 bg-black/20">
+        {/* Impressum & Kontakt */}
+        <div className="mx-auto max-w-6xl px-6 pt-8 pb-6">
+          <div className="rounded-2xl border border-white/10 bg-night-900/80 p-5 backdrop-blur-xl">
+            <h4 className="text-base font-semibold text-white mb-3">Impressum & Kontakt</h4>
+            <div className="text-white/70 space-y-1.5 text-xs">
+              <p className="font-semibold text-white text-sm">VoxOn.ai – Voice & Chatbots e.U.</p>
+              <p>Gymelsdorfer Gasse 23, 2700 Wiener Neustadt, Österreich</p>
+              <p>
+                E-Mail:{" "}
+                <a href="mailto:hello@voxon.app" className="text-electric-400 hover:text-electric-300">
+                  hello@voxon.app
+                </a>
+                {" | "}Web:{" "}
+                <a href="https://www.voxon.app" className="text-electric-400 hover:text-electric-300">
+                  voxon.app
+                </a>
+              </p>
+              <p>UID: ATU80848978 | Gerichtsstand: Landesgericht Wiener Neustadt</p>
+            </div>
+          </div>
+        </div>
+
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
           <div className="space-y-2">
             <p>© {new Date().getFullYear()} {copy.footer.company}. Alle Rechte vorbehalten.</p>

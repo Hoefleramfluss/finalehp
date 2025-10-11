@@ -6,6 +6,7 @@ import IntroContent from "@/sections/IntroContent";
 import Why from "@/sections/Why";
 import Functions from "@/sections/Functions";
 import Testimonials from "@/sections/Testimonials";
+import Security from "@/sections/Security";
 import Pricing from "@/sections/Pricing";
 import FAQ from "@/sections/FAQ";
 import Contact from "@/sections/Contact";
@@ -36,6 +37,7 @@ export default function HomePage() {
         <Functions />
         <Testimonials />
         <Pricing />
+        <Security />
         <Contact />
         <FAQ />
         <CTA />

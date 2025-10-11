@@ -121,7 +121,7 @@ export const copy = {
   },
   testimonials: {
     title: "Stimmen unserer Kunden",
-    intro: "Seit wir Voxon nutzen, haben unsere Kellner wieder mehr Zeit fürs wesentliche. – Höfler am Fluss",
+    intro: "",
     quotes: [
       {
         quote: "Seit wir Voxon nutzen, haben unsere Kellner wieder mehr Zeit fürs wesentliche.",

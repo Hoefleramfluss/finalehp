@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutzerklärung – Voxon.ai</title>
+  <meta name="robots" content="index, follow">
+  <title>Datenschutzerklärung gemäß DSGVO – VoxOn.ai</title>
   <style>
     * {
       margin: 0;
@@ -13,7 +14,7 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.7;
+      line-height: 1.8;
       color: #e5e5e5;
       background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
       min-height: 100vh;
@@ -226,26 +227,33 @@
 
     <h2>7. Verarbeitung durch KI-Systeme (Voice & Chatbots)</h2>
     <p>
-      Unsere Systeme nutzen künstliche Intelligenz zur Verarbeitung von Sprache und Text. Dabei können Audio- und Textdaten vorübergehend über externe API-Dienste verarbeitet werden, etwa zur Spracherkennung (STT = Speech to Text) oder Sprachausgabe (TTS = Text to Speech).
+      Unsere Plattform nutzt <strong>Google Cloud Vertex AI (EU-Region – europe-west3)</strong> für die Modell- und Datenverarbeitung.
+      Die Datenverarbeitung erfolgt <strong>ausschließlich innerhalb der EU</strong> unter Einhaltung von Art. 28 DSGVO.
     </p>
     <p><strong>Alle eingesetzten Systeme sind DSGVO-konform konfiguriert.</strong></p>
     
-    <h3>Eingesetzte Subprozessoren (je nach Projekt):</h3>
+    <h3>Eingesetzte Auftragsverarbeiter:</h3>
     <ul>
-      <li><strong>Google Cloud (EU-Region / Speech-to-Text, Text-to-Speech)</strong><br>
-        Anbieter: Google Ireland Limited<br>
-        Datenschutz: <a href="https://policies.google.com/privacy?hl=de" target="_blank">https://policies.google.com/privacy?hl=de</a>
+      <li><strong>Google Cloud EMEA Ltd.</strong><br>
+        Betreiber der Vertex-AI-, Speech- und Hosting-Infrastruktur<br>
+        Standort: Irland / Rechenzentren in der EU<br>
+        Datenschutz: <a href="https://cloud.google.com/terms/data-processing-addendum" target="_blank">Data Processing Addendum</a>
       </li>
-      <li><strong>Twilio Inc. (Voice API, Telefonie)</strong><br>
-        Anbieter: Twilio Ireland Limited<br>
-        Datenschutz: <a href="https://www.twilio.com/legal/privacy" target="_blank">https://www.twilio.com/legal/privacy</a>
+      <li><strong>OpenAI (EU Endpunkte), Anthropic EU, Mistral AI (EU)</strong><br>
+        LLM-Verarbeitung ausschließlich auf EU-Servern<br>
+        Vertraglich abgesicherte Auftragsverarbeitung gemäß Art. 28 DSGVO
       </li>
-      <li><strong>OpenAI / Anthropic / Mistral (LLM-Verarbeitung)</strong><br>
-        Verarbeitung ausschließlich auf EU-Servern über Auftragsverarbeitung nach Art. 28 DSGVO
-      </li>
-      <li><strong>ElevenLabs / Deepgram / Link Mobility (TTS, SMS)</strong> – sofern aktiviert</li>
-      <li><strong>Mailgun (E-Mail-Versand)</strong> – DSGVO-konformer AV-Vertrag vorhanden</li>
     </ul>
+    
+    <div class="highlight-box">
+      <p><strong>✅ Wichtig:</strong></p>
+      <ul>
+        <li>Es findet <strong>keine Übermittlung personenbezogener Daten in Drittländer</strong> außerhalb der EU/EWR statt.</li>
+        <li>Es werden <strong>keine Drittanbieter für Audio- oder SMS-Verarbeitung</strong> (z. B. ElevenLabs, Deepgram, Link Mobility) eingesetzt.</li>
+        <li>Alle Daten werden auf <strong>europäischen Google-Servern</strong> verarbeitet.</li>
+      </ul>
+    </div>
+    
     <p>Alle Dienstleister sind vertraglich als <strong>Auftragsverarbeiter im Sinne von Art. 28 DSGVO</strong> eingebunden.</p>
 
     <h2>8. Speicherung und Löschung</h2>
@@ -275,13 +283,14 @@
     <h2>10. Weitergabe an Dritte</h2>
     <p>Eine Weitergabe Ihrer Daten erfolgt ausschließlich:</p>
     <ul>
-      <li>an Auftragsverarbeiter (z. B. Hosting-, Kommunikations- oder Support-Dienstleister),</li>
+      <li>an Auftragsverarbeiter (Google Cloud EMEA Ltd., LLM-Anbieter mit EU-Endpunkten),</li>
       <li>an gesetzlich berechtigte Stellen (z. B. Finanzbehörden),</li>
       <li>oder wenn Sie ausdrücklich eingewilligt haben.</li>
     </ul>
     <p>
-      <strong>Es findet keine unkontrollierte Weitergabe an Drittländer außerhalb der EU/EWR statt.</strong><br>
-      Sämtliche externen Anbieter verfügen über EU-Standardvertragsklauseln (SCCs) oder gleichwertige Garantien.
+      <strong>Es findet keine Übermittlung an Drittländer außerhalb der EU/EWR statt.</strong><br>
+      Alle Auftragsverarbeiter sind in der EU ansässig und verarbeiten Daten ausschließlich auf EU-Servern.
+      Es gibt keine Profiling- oder Werbeweitergabe an Dritte.
     </p>
 
     <h2>11. Cookies & Tracking</h2>
@@ -321,7 +330,10 @@
 
     <h2>14. Auftragsverarbeitung</h2>
     <p>
-      Mit allen Subdienstleistern (z. B. Google Cloud, Twilio, Mailgun, OpenAI, Link Mobility) bestehen schriftliche <strong>Auftragsverarbeitungsverträge (AVV) nach Art. 28 DSGVO</strong>, die die Vertraulichkeit, Integrität und Sicherheit der Datenverarbeitung gewährleisten.
+      Mit allen Subdienstleistern (Google Cloud EMEA Ltd., OpenAI EU, Anthropic EU, Mistral AI) bestehen schriftliche <strong>Auftragsverarbeitungsverträge (AVV) nach Art. 28 DSGVO</strong>, die die Vertraulichkeit, Integrität und Sicherheit der Datenverarbeitung gewährleisten.
+    </p>
+    <p>
+      Der vollständige AV-Vertrag für Kunden ist unter <a href="/VoxOn_AV_Vertrag.pdf" download>VoxOn_AV_Vertrag.pdf</a> verfügbar.
     </p>
 
     <h2>15. Automatisierte Entscheidungsfindung / Profiling</h2>
