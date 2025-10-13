@@ -1,5 +1,5 @@
-import { useRef, useState, useEffect } from "react";
-import { motion, useScroll, useTransform, useMotionValue } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import ShimmerButton from "@/components/ui/ShimmerButton";
 import VideoBackground from "@/components/ui/VideoBackground";
 import { copy } from "@/copy";
@@ -7,21 +7,14 @@ import { trackEvent } from "@/components/Analytics";
 
 export default function Hero() {
   const ref = useRef<HTMLElement | null>(null);
-  const [isDesktop, setIsDesktop] = useState(false);
-  
-  useEffect(() => {
-    setIsDesktop(window.innerWidth >= 768);
-  }, []);
-
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
 
-  const staticValue = useMotionValue(0);
-  const titleY = isDesktop ? useTransform(scrollYProgress, [0, 1], [0, 60]) : staticValue;
-  const subtitleOpacity = isDesktop ? useTransform(scrollYProgress, [0, 0.6], [1, 0.4]) : useMotionValue(1);
-  const badgeY = isDesktop ? useTransform(scrollYProgress, [0, 1], [0, 40]) : staticValue;
+  const titleY = useTransform(scrollYProgress, [0, 1], [0, 60]);
+  const subtitleOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0.4]);
+  const badgeY = useTransform(scrollYProgress, [0, 1], [0, 40]);
 
   const handleFunctionsClick = () => {
     trackEvent('cta_click', { cta_type: 'secondary', cta_text: 'Live-Demo anhören' });
