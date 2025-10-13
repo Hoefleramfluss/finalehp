@@ -49,6 +49,7 @@ export default function Testimonials() {
             controls
             playsInline
             loop
+            preload="metadata"
           >
             <source src="/testimonial-video.mp4" type="video/mp4" />
             Ihr Browser unterstützt das Video-Element nicht.
@@ -84,6 +85,7 @@ export default function Testimonials() {
                 <img 
                   src={quote.logo} 
                   alt="" 
+                  loading="lazy"
                   className="h-10 w-auto object-contain opacity-80 sm:h-12"
                 />
               )}

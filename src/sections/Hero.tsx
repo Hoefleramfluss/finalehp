@@ -45,6 +45,9 @@ export default function Hero() {
           <img 
             src="/voxon-logo.png" 
             alt="Voxon.ai" 
+            loading="eager"
+            width="224"
+            height="224"
             className="h-32 w-auto sm:h-40 md:h-48 lg:h-56 opacity-90 transition-opacity hover:opacity-100"
           />
         </motion.div>

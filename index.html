@@ -23,13 +23,22 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.svg" />
+    <link rel="preload" as="image" href="/voxon-logo.png" fetchpriority="high" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.voxon.app/" />
     <meta property="og:site_name" content="VoxOn.ai" />
