@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -14,6 +16,21 @@ import CTA from "@/sections/CTA";
 import { copy } from "@/copy";
 
 export default function HomePage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to section if hash is present
+    if (location.hash) {
+      const id = location.hash.substring(1); // Remove the #
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    }
+  }, [location]);
+
   return (
     <div className="relative min-h-screen bg-night-900 text-white">
       <SEO
