@@ -122,7 +122,8 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="ml-auto h-full w-full max-w-full bg-[#0a0e1a] shadow-xl ring-1 ring-white/10 p-6"
+              style={{ backgroundColor: '#0a0e1a' }}
+              className="ml-auto h-full w-full max-w-full shadow-xl ring-1 ring-white/10 p-6"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="mb-8 flex items-center justify-between">
