@@ -7,6 +7,8 @@ const VoicebotDeutsch = lazy(() => import("@/pages/VoicebotDeutsch"));
 const KITerminbuchung = lazy(() => import("@/pages/KITerminbuchung"));
 const VoicebotGastronomie = lazy(() => import("@/pages/VoicebotGastronomie"));
 const BlogVoiceAITrends2025 = lazy(() => import("@/pages/BlogVoiceAITrends2025"));
+const LoginPage = lazy(() => import("@/pages/Login"));
+const RegistarPage = lazy(() => import("@/pages/Registar"));
 
 // Redirect component for section-based routes
 function SectionRedirect({ section }: { section: string }) {
@@ -33,6 +35,8 @@ function App() {
           <Route path="/pricing" element={<SectionRedirect section="pricing" />} />
           <Route path="/faq" element={<SectionRedirect section="faq" />} />
           <Route path="/contact" element={<SectionRedirect section="contact" />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/registar" element={<RegistarPage />} />
           <Route path="/voicebot-deutsch" element={<VoicebotDeutsch />} />
           <Route path="/ki-terminbuchung" element={<KITerminbuchung />} />
           <Route path="/branchen/gastronomie" element={<VoicebotGastronomie />} />
