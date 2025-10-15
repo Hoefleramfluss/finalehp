@@ -114,7 +114,7 @@ export default function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-[60] bg-black/60 md:hidden"
+            className="fixed inset-0 z-[60] bg-black md:hidden"
             onClick={() => setOpen(false)}
           >
             <motion.div
@@ -122,7 +122,12 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="ml-auto h-full w-full max-w-full shadow-xl ring-1 ring-white/10 p-6 bg-[rgb(10,14,26)]"
+              className="ml-auto h-full w-full max-w-full shadow-xl ring-1 ring-white/10 p-6"
+              style={{
+                backgroundColor: '#0a0e1a',
+                backgroundImage: 'none',
+                opacity: 1
+              }}
               onClick={(e) => e.stopPropagation()}
             >
               <div className="mb-8 flex items-center justify-between">
