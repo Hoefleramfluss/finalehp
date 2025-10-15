@@ -37,6 +37,7 @@ function App() {
           <Route path="/ki-terminbuchung" element={<KITerminbuchung />} />
           <Route path="/branchen/gastronomie" element={<VoicebotGastronomie />} />
           <Route path="/blog/voice-ai-trends-2025" element={<BlogVoiceAITrends2025 />} />
+          <Route path="/BlogVoiceAITrends2025" element={<BlogVoiceAITrends2025 />} />
         </Routes>
       </Suspense>
     </>
